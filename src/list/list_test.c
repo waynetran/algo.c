@@ -1,6 +1,6 @@
 #include "list_test.h"
-#include "list.h"
-#include "listnode.h"
+#include "list/list.h"
+#include "list/listnode.h"
 
 bool list_test_run(){
 	logInfo("ALGO.C Library - List Test Suite");

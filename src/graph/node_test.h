@@ -5,11 +5,10 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdbool.h>
-#include "node.h"
-#include "edge.h"
+#include "graph/node.h"
+#include "graph/edge.h"
 #include "types.h"
-#include "graph.h"
-#include "ds.h"
+#include "graph/graph.h"
 
 bool node_test_run();
 bool node_test_create();

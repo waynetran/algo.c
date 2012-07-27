@@ -1,4 +1,4 @@
-#include "graph.h"
+#include "graph/graph.h"
 #include "log.c/log.h"
 
 bool GraphCreate(Graph **graphOut){

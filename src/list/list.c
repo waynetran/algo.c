@@ -1,6 +1,6 @@
 #include <log.c/log.h>
-#include "list.h"
-#include "listnode.h"
+#include "list/list.h"
+#include "list/listnode.h"
 
 void ListCreate(List **listRef){
 	*listRef = (List *) malloc(sizeof(List));

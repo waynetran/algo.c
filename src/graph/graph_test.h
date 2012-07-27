@@ -2,7 +2,7 @@
 #define ALGORITHMS_GRAPH_TEST_H
 #include <stdlib.h>
 #include <stdbool.h>
-#include "graph.h"
+#include "graph/graph.h"
 
 bool graph_test_run();
 bool graph_test_create();

@@ -1,5 +1,5 @@
-#include "edge.h"
-#include "node.h"
+#include "graph/edge.h"
+#include "graph/node.h"
 #include "log.c/log.h"
 
 bool EdgeCreate(Edge ** edgeOut,double weight, Node *nodeFrom, Node *nodeTo){

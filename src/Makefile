@@ -1,7 +1,7 @@
 CC = gcc
 PWD = $(shell pwd)
-CFLAGS = -g -c -Wall -std=c99 -I../lib/libds -I/usr/local/include -I$(PWD) -I$(PWD)/list
-LDFLAGS= ../lib/libds/libds.a -lm -llog.c
+CFLAGS = -g -c -Wall -std=c99 -I/usr/local/include -I$(PWD) -I$(PWD)/../headers
+LDFLAGS= -lm -llog.c
 
 OBJS = graph/node.o graph/edge.o graph/graph.o list/listnode.o list/list.o
 SOURCES = $(OBJS:.o=.c)
@@ -20,10 +20,12 @@ all: $(OUT) test
 
 $(OUT): $(OBJS)
 	ar rcs $@ $(OBJS)
+	$(MKDIR) ../lib
 	cp $(OUT) ../lib
 
 test: $(OUT) $(TESTOBJS)
 	$(CC) -o $@ $(TESTOBJS) $(OUT) $(LDFLAGS)
+	$(MKDIR) ../test
 	mv test ../test
 
 $(OBJS): %.o: %.c

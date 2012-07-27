@@ -4,7 +4,6 @@ tarname = $(package)
 distdir = $(tarname)-$(version)
 
 all:
-	cd lib/libds && $(MAKE)
 	cd src && $(MAKE) $@
 
 test:
@@ -15,7 +14,9 @@ clean:
 	cd src && $(MAKE) $@
 
 distclean: clean FORCE
+	-rm -rf lib test
 	cd src && $(MAKE) $@
+
 
 dist: $(distdir).tar.gz
 
@@ -38,6 +39,9 @@ distcheck: $(distdir).tar.gz
 	rm -rf $(distdir)
 	@echo "*** Package $(distdir).tar.gz is ready for distribution."
 
+install:
+	cp lib/lib$(package).a /usr/local/lib
+	cp headers /usr/local/include/$(package)
 
 FORCE:
 	-rm $(distdir).tar.gz > /dev/null 2>&1

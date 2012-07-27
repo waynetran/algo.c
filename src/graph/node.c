@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 #include <log.c/log.h>
-#include "node.h"
-#include "edge.h"
+#include "graph/node.h"
+#include "graph/edge.h"
 
 
 /*private*/
