@@ -6,7 +6,6 @@
 struct Node;
 
 struct Edge{
-	/*char *uuid;*/
 	double weight;
 	Node *nodeFrom;
 	Node *nodeTo;

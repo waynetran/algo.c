@@ -7,9 +7,9 @@
  * Sorted by ListNode's weight
  */
 struct List{
-	ListNode *head;
-	ListNode *tail;
-	size_t size;
+	ListNode *head;	/*First node.  This is the minimum*/
+	ListNode *tail; /*First node.  This is the maximum*/
+	size_t size;	/*size of the list*/
 };
 
 void ListCreate(List **listRef);

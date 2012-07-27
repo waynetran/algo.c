@@ -2,18 +2,13 @@
 #define ALGORITHMS_LISTNODE_H
 #include "types.h"
 
+/* Elements of the list */
 struct ListNode{
-	/*label for node*/
-	char *key;
-	/*storing arbitrary data */
-	void *data;
-	/*size in bytes of data*/
-	//size_t dataSize;
-	/*used for sorting, initial 0*/
-	double weight;
-
-	struct ListNode *next;
-	struct ListNode *prev;
+	char *key; 	/*label for node*/
+	void *data; 	/*storing arbitrary data */
+	double weight; 	/*used for sorting, default 0*/
+	struct ListNode *next;   /*Next element of the list.  NULL Indicates node is a tail.*/
+	struct ListNode *prev;   /*Next element of the list.  NULL Indicates node is a head.*/
 };
 
 /* Creates a ListNode
