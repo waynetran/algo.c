@@ -1,0 +1,13 @@
+algorithms.config
+algorithms.creator
+algorithms.creator.user
+algorithms.files
+algorithms.includes
+.git
+*~
+*.[oa]
+*.log
+*.autosave
+/lib/
+/test/
+/algo.c-*.gz
