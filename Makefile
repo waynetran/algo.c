@@ -41,7 +41,7 @@ distcheck: $(distdir).tar.gz
 
 install:
 	cp lib/lib$(package).a /usr/local/lib
-	cp headers /usr/local/include/$(package)
+	cp -r headers /usr/local/include/$(package)
 
 FORCE:
 	-rm $(distdir).tar.gz > /dev/null 2>&1
