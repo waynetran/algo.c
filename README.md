@@ -59,7 +59,7 @@ struct ListNode{
 	make && sudo make install
 
 This will build and install into:
-* ***/usr/local/include/algo.c ***
+* ***/usr/local/include/algo.c***
 * ***/usr/local/lib/libalgo.c.a***
 
 # Contact
